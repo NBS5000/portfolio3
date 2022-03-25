@@ -1,0 +1,14 @@
+.scroll::-webkit-scrollbar {
+    background:transparent;
+    height: 8px;
+}
+
+.scroll::-webkit-scrollbar-thumb:horizontal {
+    background-color: var(--h_color);    
+    border-radius: 10px;  
+    border: 1px solid darkgray; 
+    height: 5px;
+}
+.scroll::-webkit-scrollbar-corner {
+    background-color: rgba(0, 0, 0, 0);
+}

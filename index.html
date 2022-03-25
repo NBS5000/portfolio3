@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Barry</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/var.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/modal.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/media.css"/>
+    
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1><span id="stephen" class="sb_name">Stephen</span><span id="barry" class="sb_name">Barry</span></h1>
+            <nav>
+                <ul id="menu">
+                    <li class="menuLink"><a href="#theCode">Code</a></li>
+                    <li class="menuLink"><a href="#about">Steve</a></li>
+                    <li class="menuLink"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <img id="banner" src="./assets/images/beach.JPG" alt="Surfer at the beach">
+    <img id="me" src="./assets/images/lorikeets.jpg" alt="Steve holding lorikeets">
+
+
+    <!-- Steve: below example taken and adjusted from w3schools-->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h5 id="modalTitle"></h5>
+            <p id="modalAbout"></p>
+            <div id="frameDiv">
+                <iframe id="modalView" src="" frameborder="0"></iframe>
+            </div>
+            <button id="visit" class="conCan" onclick="visitPage()" value="">Visit</button><button id="git" class="conCan" onclick="visitGit()" value="">Github</button><button id="canx" class="conCan" target="_blank">Cancel</button>
+        </div>
+    </div>
+    <!----------------->
+    <div id="mainContent">
+        <div id="about">
+            <h2 id="aboutH2">About Me</h2>
+            <p class="aboutP" id="aboutTop">Having spent over a decade working in the technical areas of insurance, such as fraud investigation, 
+                litigation, complaints, and other fun parts of it, an opportunity arose for me to switch to something 
+                I had long held a passion and interest for.....coding.</p>
+            <p class="aboutP" id="aboutMiddle">Whilst living in Brasil, I studied web development through TAFE distance learning. Upon returning to Australia, 
+                I completed further courses, culminating in two TAFE diplomas, Software Development, and Web Development.</p>
+            <p class="aboutP">Once my courses were complete, I entered the development community, where I spent time volunteering with the 
+                Black Dog Institute, rebuilding and delivering their intranet. After this, I spent a number of years working 
+                with the FileMaker platform. Despite becoming an accomplished developer with this, I decided to leave and re-hone 
+                my skills with the University of Sydney Full Stack Bootcamp.</p>
+            <p class="aboutP">To view my resume, please click <a id="resume" href="https://docs.google.com/document/d/1rUfsYP4VY3RjZRth_pvh2s8ZYj7r6FfjqfcYySy1COc/edit?usp=sharing" target="_blank">here</a>.</p>
+        </div>
+        <div id="theCode">
+            <h2>My Code</h2>
+            <div id="mainExample">
+                <h3>Date Night!</h3>
+                <p class="codeP">A group project with three other members. An app that allows the user to enter a location and date for a Date, 
+                    and it provides the weather, clothing recommendations, jokes, quotes, and drink suggestions to help a nervous person. 
+                    Also provided are a map and directions.</p>
+                <img id="img_dateNight" class="codeImg" src="./assets/images/dateNight.png" alt="Screenshot of Date Night">
+            </div>
+            <div class="subExample">
+                <h3>The Weather</h3>
+                <p class="codeP">An assignment to generate a weather app where a user can enter a location and be provided with details of
+                    the current and upcoming weather.</p>
+                <img id="img_weather" class="codeImg subImg" src="./assets/images/theWeather.png" alt="Screenshot of The Weather">
+            </div>
+            <div class="subExample">
+                <h3>Password Generator</h3>
+                <p class="codeP">An app where a user can have a randomised password generated, with selected parameters.</p>
+                <img id="img_password" class="codeImg subImg" src="./assets/images/password.png" alt="Screenshot of Password Generator">
+            </div>
+            <div class="subExample">
+                <h3>Scheduler</h3>
+                <p class="codeP">An assignment to build an app where a user can enter upcoming events.</p>
+                <img id="img_scheduler" class="codeImg subImg" src="./assets/images/scheduler.png" alt="Screenshot of Scheduler">
+            </div>
+            <div class="subExample">
+                <h3>Quiz Time</h3>
+                <p class="codeP">A timed, Star Wars themed quiz, with multiple choice questions and a high score leaderboard.</p>
+                <img id="img_quiz" class="codeImg subImg" src="./assets/images/quiz.png" alt="Screenshot of Quiz Time">
+            </div>
+            <div class="cricketDiv">
+                <h3>A bit of fun!</h3>
+                <p class="codeP">Fancy a game of cricket?</p>
+                <a href="javascript:cricket()"><img class="codeImg" src="./assets/images/cricket.png" alt="Play cricket logo"></a>
+
+            </div>
+        </div>
+        <div id="contact">
+            <h2>Contact Me</h2>
+            <p class="contactP">Please feel free to contact me on one of the methods below.</p>
+            <div class="contactIcon">
+                <a href="mailto:nbs5000.dev@gmail.com"><img class="contactImg" src="./assets/images/email.png" alt="Email Icon"></a>
+            </div>
+            <div class="contactIcon">
+                <a href="https://github.com/NBS5000" target="_blank"><img class="contactImg" src="./assets/images/github.png" alt="Github Icon"></a>
+            </div>
+            <div class="contactIcon">
+                <a href="https://www.linkedin.com/in/stephen-barry-676306108/" target="_blank"><img class="contactImg" src="./assets/images/linkedin.png" alt="LinkedIn Icon"></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h4>&copy; Steve Barry 2022</h4>
+    </footer>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/cricket.js"></script>
+    <script src="./assets/js/mainScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+/*
+-Steve Barry-
+main css file
+*/
+
+body{
+    width: 100%;
+    background-image: url("../images/bg.png");
+    background-repeat: repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+}
+header{
+    padding-top: 10px;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    text-align: center;
+    font-size: 80%;
+    padding: 20px;
+    background-color: grey;
+    color: white;
+    text-shadow: var(--tx_shadow);
+}
+h1{
+    position: relative;
+    width: fit-content;
+}
+#menu{
+    display: flex;
+    padding: 0;
+    margin-left: -100%;
+    right: 0;
+}
+.menuLink{
+    padding-right: 20%;
+    text-align: center;
+    line-height: 200%;
+    width: max-content;
+}
+.sb_name{
+    float: left;
+    font-size: 150%;
+    text-shadow: var(--tx_shadow);
+    flex-shrink: 2;
+    display: block;
+    width: fit-content;
+}
+#stephen{
+    margin-left: 50px;
+    font-weight: bold;
+}
+#barry{
+    color: lightgrey;
+    font-weight: normal;
+}
+#banner{
+    width: 100%;
+    background: linear-gradient(bottom, black,rgba(255,255,255,1));
+    border: none;
+    height: 200px;
+}
+#mainContent{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: -9%;
+    flex-wrap: wrap;
+}
+#resume{
+    color: var(--h_color);
+}
+#me{
+    width:15%;
+    height: 10%;
+    margin-left: 3%;
+    margin-top: -10%;
+    left: 20px;
+    border-radius: 10px;
+    box-shadow: var(--bx_shadow);
+    min-width: 70px;
+}
+a{
+    color: white;
+}
+#aboutH2{
+    margin-top: -15%;
+}
+h2{
+    color: var(--h_color);
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 50%;
+}
+.aboutP{
+    width: 100%;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+#theCode, #contact{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: fit-content;
+}
+#contact{
+    margin-bottom: 50px;
+}
+#mainExample{
+    margin-bottom: 20px;
+}
+h3{
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 125%;
+}
+#img_dateNight{
+    width: 100%;
+    height: fit-content;
+    min-width: 190px;
+    margin: 0 auto;
+}
+.codeImg{
+    border-radius: 20px;
+    box-shadow: var(--bx_shadow);
+    margin: 0 auto;
+}
+.codeP{
+    margin-bottom: 10px;
+}
+.subExample{
+    width: 45%;
+    margin-bottom: 20px;
+}
+.subImg{
+    width:100%;
+    height: fit-content;
+}
+.cricketDiv{
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+.cricket{
+    border: none;
+}
+.contactIcon{
+    width: 30%;
+    max-width: 100px;
+    height: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+.contactImg{
+    height: 50px;
+    width: 50%;
+}
+h2{
+    width: 100%;
+}
+.contactP{
+    width: 100%;
+    margin-bottom: 15px;
+}
+

@@ -98,7 +98,7 @@
                             <h4 class="itemH4">Password Generator</h4>
                             <p class="itemP">Where a user can select parameters and have a password generated for them</p>
                         </div>
-                        <button class="projViewBtn" data-value="password"></button>
+                        <button class="projViewBtn" data-value="passwordGenerator"></button>
                     </div>
                     <div class="itemBox">
                         <div class="circle">
@@ -196,6 +196,23 @@
                 </div>
             </div>
             <!-- ............ -->
+
+
+                <!-- The Modal -->
+    <div id="myModal_proj" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h5 id="modalTitle"></h5>
+            <p id="modalAbout"></p>
+            <div id="frameDiv">
+                <iframe id="modalView" src="" frameborder="0"></iframe>
+            </div>
+            <button id="visit" class="conCan" onclick="visitPage()" value="">Visit</button>
+            <button id="git" class="conCan" onclick="visitGit()" value="">Github</button>
+            <button id="canx" class="conCan" target="_blank">Cancel</button>
+        </div>
+    </div>
+    <!----------------->
         </div>
     <footer>
         <div id="ball4"></div>

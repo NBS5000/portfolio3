@@ -14,7 +14,7 @@
 #ball1{
     height: 70vw;
     width: 70vw;
-    background-color: var(--secondColor);
+    /* background-color: var(--secondColor); */
     border-radius: 50%;
     border: 2px solid var(--firstColor);
     position: absolute;
@@ -29,7 +29,7 @@
 #ball2{
     height: 50vw;
     width: 50vw;
-    background-color: var(--secondColor);
+    /* background-color: var(--secondColor); */
     border-radius: 50%;
     border: 2px solid var(--thirdColor);
     position: absolute;

@@ -10,9 +10,9 @@
     /* 0%   {border: 2px solid var(--thirdColor); bottom: -30vw;}
     50%  {border: 2px solid var(--firstColor); bottom: 8vw;}
     100% {border: 2px solid var(--thirdColor); bottom: -30vw;} */
-    0%   {bottom: -30vw;}
-    50%  {bottom: 8vw;}
-    100% {bottom: -30vw;}
+    0%   {bottom: -37vw;}
+    50%  {bottom: 1.2vw;}
+    100% {bottom: -37vw;}
 }
 @keyframes ball3 {
     0%   {border: 2px solid var(--secondColor); top: -30vw;}
@@ -46,9 +46,24 @@
 
 
 @keyframes bwFont{
-    0%  {color:black;text-shadow: 0 0 1px white;}
-    40% {color:black;text-shadow: 0 0 1px white;}
-    50% {color:white;text-shadow: 0 0 1px black;}
-    90% {color:white;text-shadow: 0 0 1px black;}
-    100%{color:black;text-shadow: 0 0 1px white;}
+    0%   {color:black;text-shadow: 0 0 1px white;}
+    40%  {color:black;text-shadow: 0 0 1px white;}
+    50%  {color:white;text-shadow: 0 0 1px black;}
+    90%  {color:white;text-shadow: 0 0 1px black;}
+    100% {color:black;text-shadow: 0 0 1px white;}
+}
+
+@keyframes copy {
+    0%   {color: white;}
+    20%  {color: white;}
+    30%  {color: var(--thirdColor);}
+    
+    55%  {color: var(--thirdColor);}
+    60%  {color:white;}
+    100% {color:white;}
+}
+
+@keyframes copy550{
+    0%   {color: var(--thirdColor);}
+    100% {color: var(--thirdColor);}
 }

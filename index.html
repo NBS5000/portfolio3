@@ -10,8 +10,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/test.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/var.css"/>    
     <link rel="stylesheet" type="text/css" href="./assets/css/key.css"/>    
+    <link rel="stylesheet" type="text/css" href="./assets/css/scroll.css"/> 
+    <link rel="stylesheet" type="text/css" href="./assets/css/media.css"/>   
     <link rel="stylesheet" type="text/css" href="./assets/css/bg.css"/>    
-    <link rel="stylesheet" type="text/css" href="./assets/css/scroll.css"/>   
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 </head>
 <body>
@@ -40,6 +41,12 @@
                 <a href="https://www.linkedin.com/in/stephen-barry-676306108/" target="_blank"><img class="contactImg" src="./assets/images/linkedin.png" alt="LinkedIn Icon"></a>
             </div>
         </div>
+        <div id="burger">
+            <div class="contactIcon">
+                <img class="contactImg" src="./assets/images/burger.png" alt="Email Icon">
+            </div>
+            
+        </div>
     </header>
 
         <div id="mainContent">
@@ -57,7 +64,7 @@
                     my skills with the University of Sydney Full Stack Bootcamp.</p>
             </div>
             <div id="code">
-                <h3>MY CODE</h3>
+                <h3>PROJECT EXAMPLES</h3>
                 <div id="displayList" class="scroll">
                     <div class="itemBox">
                         <div class="circle">
@@ -74,7 +81,7 @@
                         </div>
                         <div class="itemText">
                             <h4 class="itemH4">Date Night</h4>
-                            <p class="itemP">A picture of Steve with Lorikeets</p>
+                            <p class="itemP">An app to help even the most nervous person before a date</p>
                         </div>
                     </div>
                     <div class="itemBox">
@@ -83,7 +90,7 @@
                         </div>
                         <div class="itemText">
                             <h4 class="itemH4">Password Generator</h4>
-                            <p class="itemP">A picture of Steve with Lorikeets</p>
+                            <p class="itemP">Where a user can select parameters and have a password generated for them</p>
                         </div>
                     </div>
                     <div class="itemBox">
@@ -92,7 +99,7 @@
                         </div>
                         <div class="itemText">
                             <h4 class="itemH4">Quiz Time!</h4>
-                            <p class="itemP">A picture of Steve with Lorikeets</p>
+                            <p class="itemP">A timed, Star Wars themed quiz, with multiple choice questions and a high score leaderboard</p>
                         </div>
                     </div>
                     <div class="itemBox">
@@ -101,7 +108,7 @@
                         </div>
                         <div class="itemText">
                             <h4 class="itemH4">The Weather</h4>
-                            <p class="itemP">A picture of Steve with Lorikeets</p>
+                            <p class="itemP">An app where a user can enter a location and get the current and upcoming weather</p>
                         </div>
                     </div>
 
@@ -111,7 +118,7 @@
                         </div>
                         <div class="itemText">
                             <h4 class="itemH4">Scheduler</h4>
-                            <p class="itemP">A picture of Steve with Lorikeets</p>
+                            <p class="itemP">A scheduler to track the days events</p>
                         </div>
                     </div>
 
@@ -124,32 +131,29 @@
                             <p class="itemP">Fancy a game?</p>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
                 </div>
 
 
             </div>
+            <!-- Menu Modal -->
+            <div id="myModal_menu" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div id = "container_menu">            
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- ....................... -->
         </div>
     <footer>
         <div id="ball4"></div>
         <div id="ftBody"></div>
-
+        <h5>&copy; Steve Barry 2022</h4>
 
     </footer>
 
-    <script>
-        var item = document.getElementById("displayList");
-        window.addEventListener("wheel", function (e) {
-        if (e.deltaY > 0) item.scrollLeft += 80;
-        else item.scrollLeft -= 80;
-        });
-    </script>
+    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/modal.js"></script>
 </body>
 </html>

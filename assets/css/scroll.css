@@ -48,7 +48,7 @@
 }
 .itemH4{
     position: absolute;
-    bottom: 45px;
+    margin-top: 5px;
     font-size: 110%;
     width: 202px;
     text-align: center;
@@ -63,13 +63,13 @@
     z-index: 5;
     position: absolute;
     bottom: 5px;
-    height: 70px;
+    height: 50%;
     width: 100%;
 }
 
 .itemP{
     position: absolute;
-    bottom: 10px;
+    top: 28px;
     width: 202px;
     text-align: center;
     z-index: 5;

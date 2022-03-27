@@ -8,65 +8,52 @@
     top: 0;
     bottom: 0;
     z-index: -1;
-    /* background-color:rgba(0,0,0,0.1); */
 }
 
 #ball1{
-    height: 70vw;
-    width: 70vw;
-    /* background-color: var(--secondColor); */
-    border-radius: 50%;
     border: 2px solid var(--firstColor);
     position: absolute;
-    top: -30vw;
-    left: -30vw;
     z-index: -5;
     animation-name: ball1;
-    animation-duration: 40s;
-    animation-iteration-count: 999;
 }
-
-#ball2{
-    height: 50vw;
-    width: 50vw;
-    /* background-color: var(--secondColor); */
-    border-radius: 50%;
-    border: 2px solid var(--thirdColor);
-    position: absolute;
-    bottom: -30vw;
-    right: -30vw;
-    z-index: -5;
-    animation-name: ball2;
-    animation-duration: 60s;
-    animation-iteration-count: 999;
-}
-
 #ball3{
-    height: 70vw;
-    width: 70vw;
     background-color: var(--firstColor);
-    border-radius: 50%;
     border: 2px solid var(--secondColor);
     position: relative;
-    top: -30vw;
-    left: -30vw;
     z-index: 1;
     animation-name: ball3;
-    animation-duration: 40s;
-    animation-iteration-count: 999;
     overflow:hidden;
 }
-#ball4{
+#ball1, #ball3{
+    height: 70vw;
+    width: 70vw;
+    border-radius: 50%;
+    top: -30vw;
+    left: -30vw;
+    animation-duration: 40s;
+    animation-iteration-count: 999;
+}
+#ball2, #ball4{
     height: 50vw;
     width: 50vw;
-    background-color: var(--thirdColor);
     border-radius: 50%;
-    border: 2px solid var(--secondColor);
-    position: absolute;
     bottom: -30vw;
     right: -30vw;
     z-index: -5;
-    animation-name: ball4;
+    position: absolute;
     animation-duration: 60s;
     animation-iteration-count: 999;
+}   
+#ball2{
+    border: 2px solid var(--thirdColor);
+    animation-name: ball2;
+    overflow:hidden;
+    bottom: -37vw;
 }
+#ball4{
+    background-color: var(--thirdColor);
+    border: 2px solid var(--secondColor);
+    animation-name: ball4;
+    overflow:hidden;
+}
+

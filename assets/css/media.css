@@ -6,99 +6,64 @@ Media CSS file
 
 
 @media screen and (max-width:850px) and (min-width:450px) {
-    #me{
-        margin-left: 41%;
-        margin-top: -10%;
-        width:20%;
-        height: 15%;
-    }
-    #mainContent{
-        margin-top: 0;
-        width: 80%;
-    }
-    #frameDiv{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    #modalView{
-        width: 100%;
-        margin-left: 13%;
-        padding: 0;
-        zoom: 1;
-    }
-    .conCan{
-        width: 51%;
-        margin-bottom: 10px;
-    }
+    
 }
-@media screen and (max-width:650px) {
-    #mainContent{
-        margin-top: 0;
-        width: 90%;
+@media screen and (max-width:550px) {
+    body{
+        overflow-y: visible;
     }
-    header{
-        height: 50px;
+    footer{
+        background-color: white; 
+    }
+    h5{
         width: 100%;
-    }
-    #banner{
-        height: 70px;
-    }
-    .sb_name{
-        font-size: 100%;
+        text-align: center;
+        font-weight: bold;
+        height: 100%;
         display: block;
-        text-align: center;
-    }
-    #stephen{
-        margin-left: 0;
-    }
-    h1{
-        width: fit-content;
-        margin: 0 auto;
-    }
-    nav{
-        width: 100%;
-    }
-    #menu{
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-    }
-    h2{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 10px;
-        text-align: center;
-    }
-    #aboutTop, #aboutMiddle{
-        margin-left: 0;
-        margin-top: 10px;
-    }
-    h3{
-        margin-top: 15px;
-        text-align: center;
+        color: var(--thirdColor);
+        animation-name: copy550;
+        animation-duration: 60s;
+        animation-iteration-count: 999;
+        margin:1%;
     }
     .aboutP{
-        text-align: justify;
+        margin-bottom: 3vw;
+        width: 85%;
+        font-size: 110%;
+        text-align: center;
+        
     }
-    #me{
-        margin-left: 36%;
-        margin-top: -10%;
+    
+    h3{
+        margin: auto 0;
+        font-size: 130%;
+        width: 85%;
+        text-align: center;
+        
     }
-    #mainExample{
-        width: 100%;
+    #about, #code{
+        margin-top: 4vw;
+        width: 50%;
+        border-right: 10px solid #F3B116;
+        border-left: 10px solid #F3B116;
+        padding-bottom: 27px;
+        justify-content: center;
+        background: #01b0f07d;
+        border-radius: 100px;
+        width: 78vw;
+        align-items: center;
+        padding-left:20px;
     }
-    .subExample{
-        width: 100%;
+    #contact{
+        display: none;
     }
-    .conCan{
-        width: 51%;
-        margin-bottom: 10px;
+    #burger{
+        display: block;
+        float: right;
+        width: fit-content;
     }
-    #modalView{
-        width: 100%;
-        margin-left:5%;
-        padding: 0;
-        zoom: 1;
+    .contactIcon{
+        margin: 0;
     }
 }

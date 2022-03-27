@@ -1,45 +1,61 @@
 
 
 // Get the modal
-var modal = document.getElementById("myModal");
+const modal = document.querySelector("#myModal_menu");
 
-// global vars
-var linkFrame = document.getElementById("modalView");
-var linkTitle = document.getElementById("modalTitle");
-var linkAbout = document.getElementById("modalAbout");
+// cancel buttons
+const canx = document.querySelector(".canx");
 
-// set and set info when clicking on individual links and show modal
-var dateBtn = document.getElementById("img_dateNight");
-dateBtn.addEventListener("click",function(){
-    var type = "dateNight";
-    var link = gitLink + type;
-    linkFrame.src = link;
-    linkTitle.innerHTML = "Date Night!";
-    getInfo(type);
+
+
+// show menu
+const burger = document.querySelector("#burger");
+const burger2 = document.querySelector("#burger2");
+burger.addEventListener("click",function(){
+    if(modal.style.display != "block"){
+        modal.style.display = "block";
+    }else{
+        modal.style.display = "none";
+    }
+});
+burger2.addEventListener("click",function(){
+    if(modal.style.display != "block"){
+        modal.style.display = "block";
+    }else{
+        modal.style.display = "none";
+    }
 });
 
 
-
-// When the user clicks the "Cancel" button, close the modal and clear fields
-
-var canxBtn = document.getElementById("canx");
-canxBtn.addEventListener("click",function(){
-    linkAbout.innerHTML = "";
-    linkTitle.innerHTML = "";
-    visit.value = "";
-    git.value = "";
-    linkFrame.src = "";
-    modal.style.display = "none";
-});
+// When the user clicks the "Cancel" button, close the modal
+// canx.addEventListener("click",function(){
+//     modal.style.display = "none";
+//     console.log("close");
+// });
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
-        linkAbout.innerHTML = "";
-        linkTitle.innerHTML = "";
-        visit.value = "";
-        git.value = "";
-        linkFrame.src = "";
         modal.style.display = "none";
+        console.log("close");
     }
 }
+
+
+
+const modalBtn_proj = document.querySelectorAll('.projViewBtn');
+modalBtn_proj.forEach(btn => {
+    btn.addEventListener('click', async (event) => {
+        const att = event.target.getAttribute("data-value");
+        const iImg = "img_" + att;
+        const iName = "name_" + att;
+        const iPrice = "price_" + att;
+        const iDesc = "desc_" + att;
+        
+        document.getElementById("name2").value = document.getElementById(iName).innerHTML;
+        document.getElementById("price2").value = document.getElementById(iPrice).innerHTML;
+        document.getElementById("description2").value = document.getElementById(iDesc).innerHTML;
+        document.getElementById("image_link2").value = document.getElementById(iImg).src;
+        modal2.style.display = "block";
+    });
+});

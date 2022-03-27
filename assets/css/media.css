@@ -32,15 +32,14 @@ Media CSS file
         width: 85%;
         font-size: 110%;
         text-align: center;
-        
     }
     
     h3{
         margin: auto 0;
         font-size: 130%;
+        display: inline-block;
         width: 85%;
         text-align: center;
-        
     }
     #about, #code{
         margin-top: 4vw;

@@ -1,160 +1,115 @@
-/*
--Steve Barry-
-main css file
-*/
-
 body{
     width: 100%;
-    background-image: url("../images/bg.png");
+    /* height: 100%; */
+    background-color: white;
     background-repeat: repeat;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x:hidden;
+    overflow:hidden;
+    position: fixed;
 }
+
 header{
-    padding-top: 10px;
     width: 100%;
-    background-color: grey;
-    color: white;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-footer{
-    text-align: center;
-    font-size: 80%;
-    padding: 20px;
-    background-color: grey;
-    color: white;
-    text-shadow: var(--tx_shadow);
-}
-h1{
-    position: relative;
-    width: fit-content;
-}
-#menu{
-    display: flex;
-    padding: 0;
-    margin-left: -100%;
-    right: 0;
-}
-.menuLink{
-    padding-right: 20%;
-    text-align: center;
-    line-height: 200%;
-    width: max-content;
-}
-.sb_name{
-    float: left;
-    font-size: 150%;
-    text-shadow: var(--tx_shadow);
-    flex-shrink: 2;
-    display: block;
-    width: fit-content;
-}
-#stephen{
-    margin-left: 50px;
-    font-weight: bold;
-}
-#barry{
-    color: lightgrey;
-    font-weight: normal;
-}
-#banner{
-    width: 100%;
-    background: linear-gradient(bottom, black,rgba(255,255,255,1));
-    border: none;
-    height: 200px;
+    height: 100px;
+    overflow:hidden;
+    position: flex;
+    z-index: 2;
 }
 #mainContent{
-    display: flex;
-    width: 60%;
+    width: 80%;
+    
     margin: 0 auto;
-    margin-top: -9%;
+    display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
-#resume{
-    color: var(--h_color);
-}
-#me{
-    width:15%;
-    height: 10%;
-    margin-left: 3%;
-    margin-top: -10%;
-    left: 20px;
-    border-radius: 10px;
-    box-shadow: var(--bx_shadow);
-    min-width: 70px;
-}
-a{
-    color: white;
-}
-#aboutH2{
-    margin-top: -15%;
+
+h1,h2{
+    margin-top: 20px;
+    margin-left: 2vw;
+    z-index: 6;
+    float: left;
+    top: 0;
+    position: fixed;
+    height: 150px;
+    width: 300px;
+    color: var(--thirdColor);
+    font-size: 200%;
+    animation-name: nameH1;
+    animation-duration: 40s;
+    animation-iteration-count: 999;
 }
 h2{
-    color: var(--h_color);
-    margin-bottom: 10px;
-    display: inline-block;
+    font-size: 100%;
+    margin-top: 65px;
+}
+#about, #code{
+    position: relative;
+    margin-top: 2vw;
     width: 50%;
+    border-right: 10px solid #F3B116;
+    border-left: 10px solid #F3B116;
+    padding-bottom: 27px;
+    justify-content: center;
+    background: #01b0f07d;
+    border-radius: 288px;
+    width: 78vw;
+    align-items: center;
+    padding-left:20px;
 }
 .aboutP{
-    width: 100%;
-    padding-bottom: 15px;
-    text-align: justify;
-}
-#theCode, #contact{
-    margin-top: 2%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: fit-content;
-}
-#contact{
-    margin-bottom: 50px;
-}
-#mainExample{
-    margin-bottom: 20px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1vw;
+    display: block;
+    width: 70%;
+    color: rgb(20, 20, 20);
+    font-weight: 100;
+    font-size: 120%;
+    
 }
 h3{
-    font-style: italic;
-    margin: 0;
-    margin-bottom: 15px;
-    font-size: 125%;
+    margin: 1vw auto;
+    color: white;
+    font-size: 150%;
+    display: block;
+    width: 70%;
+    
 }
-#img_dateNight{
-    width: 100%;
-    height: fit-content;
-    min-width: 190px;
-    margin: 0 auto;
+#fName{
+    text-shadow: 1px 1px var(--thirdColor);
 }
-.codeImg{
-    border-radius: 20px;
-    box-shadow: var(--bx_shadow);
-    margin: 0 auto;
+#lName{
+    /* text-shadow: 1px 1px var(--secondColor); */
+    animation-name: lName;
+    animation-duration: 40s;
+    animation-iteration-count: 999;
 }
-.codeP{
-    margin-bottom: 10px;
+
+#contact{
+    margin-top: 2vw;
+    z-index: 6;
+    float: right;
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    display: flex;
 }
-.subExample{
-    width: 45%;
-    margin-bottom: 20px;
-}
-.subImg{
-    width:100%;
-    height: fit-content;
-}
-.cricketDiv{
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
-    border: none;
-}
-.cricket{
-    border: none;
+#burger{
+    margin-top: 2vw;
+    z-index: 6;
+    float: right;
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    display: none;
 }
 .contactIcon{
-    width: 30%;
+    width: 100px;
     max-width: 100px;
     height: fit-content;
     margin: 0 auto;
@@ -164,11 +119,35 @@ h3{
     height: 50px;
     width: 50%;
 }
-h2{
+
+footer{
     width: 100%;
+    height: 6vw;
+    overflow:hidden;
+    position: fixed;
+    bottom: 0;
+    z-index: 12;
 }
-.contactP{
-    width: 100%;
-    margin-bottom: 15px;
+h5{
+    font-size: 90%;
+    font-weight: 100;
+    float: right;
+    margin-top: 2.5vw;
+    margin-right: 2vw;
+    line-height: 100%;
+    display: block;
+    animation-name: copy;
+    animation-duration: 60s;
+    animation-iteration-count: 999;
 }
 
+.projViewBtn{
+    border: none; 
+    /* background-color:rgba(0, 0, 0, 0);  */
+    background-color: black;
+    margin-left: -100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius:50%;
+}

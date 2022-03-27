@@ -7,12 +7,13 @@
     <title>Stephen Barry</title>
 
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/css/test.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/var.css"/>    
-    <link rel="stylesheet" type="text/css" href="./assets/css/key.css"/>    
+    <link rel="stylesheet" type="text/css" href="./assets/css/key.css"/>  
+    <link rel="stylesheet" type="text/css" href="./assets/css/bg.css"/>      
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/scroll.css"/> 
     <link rel="stylesheet" type="text/css" href="./assets/css/media.css"/>   
-    <link rel="stylesheet" type="text/css" href="./assets/css/bg.css"/>    
+    <link rel="stylesheet" type="text/css" href="./assets/css/modal.css"/>    
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 </head>
 <body>
@@ -40,6 +41,9 @@
             <div class="contactIcon">
                 <a href="https://www.linkedin.com/in/stephen-barry-676306108/" target="_blank"><img class="contactImg" src="./assets/images/linkedin.png" alt="LinkedIn Icon"></a>
             </div>
+            <div class="contactIcon" id="burger2">
+                <img class="contactImg" src="./assets/images/burger.png" alt="Burger Icon">
+            </div>
         </div>
         <div id="burger">
             <div class="contactIcon">
@@ -61,7 +65,7 @@
                 <p class="aboutP">Once my courses were complete, I entered the development community, where I spent time volunteering with the 
                     Black Dog Institute, rebuilding and delivering their intranet. After this, I spent a number of years working 
                     with the FileMaker platform. Despite becoming an accomplished developer with this, I decided to leave and re-hone 
-                    my skills with the University of Sydney Full Stack Bootcamp.</p>
+                    my skills with the University of Sydney Full Stack Bootcamp to focus on becoming a web developer.</p>
             </div>
             <div id="code">
                 <h3>PROJECT EXAMPLES</h3>
@@ -74,6 +78,7 @@
                             <h4 class="itemH4">MosEspa</h4>
                             <p class="itemP">An e-commerce site set in the Star Wars universe</p>
                         </div>
+                        <button class="projViewBtn" data-value="mosEspa"></button>
                     </div>
                     <div class="itemBox">
                         <div class="circle">
@@ -83,6 +88,7 @@
                             <h4 class="itemH4">Date Night</h4>
                             <p class="itemP">An app to help even the most nervous person before a date</p>
                         </div>
+                        <button class="projViewBtn" data-value="dateNight"></button>
                     </div>
                     <div class="itemBox">
                         <div class="circle">
@@ -92,6 +98,7 @@
                             <h4 class="itemH4">Password Generator</h4>
                             <p class="itemP">Where a user can select parameters and have a password generated for them</p>
                         </div>
+                        <button class="projViewBtn" data-value="password"></button>
                     </div>
                     <div class="itemBox">
                         <div class="circle">
@@ -101,6 +108,7 @@
                             <h4 class="itemH4">Quiz Time!</h4>
                             <p class="itemP">A timed, Star Wars themed quiz, with multiple choice questions and a high score leaderboard</p>
                         </div>
+                        <button class="projViewBtn" data-value="quizTime"></button>
                     </div>
                     <div class="itemBox">
                         <div class="circle">
@@ -110,6 +118,7 @@
                             <h4 class="itemH4">The Weather</h4>
                             <p class="itemP">An app where a user can enter a location and get the current and upcoming weather</p>
                         </div>
+                        <button class="projViewBtn" data-value="weather"></button>
                     </div>
 
                     <div class="itemBox">
@@ -120,6 +129,7 @@
                             <h4 class="itemH4">Scheduler</h4>
                             <p class="itemP">A scheduler to track the days events</p>
                         </div>
+                        <button class="projViewBtn" data-value="scheduler"></button>
                     </div>
 
                     <div class="itemBox">
@@ -130,6 +140,7 @@
                             <h4 class="itemH4">Cricket</h4>
                             <p class="itemP">Fancy a game?</p>
                         </div>
+                        <button class="projViewBtn"></button>
                     </div>
                 </div>
 
@@ -139,12 +150,52 @@
             <div id="myModal_menu" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
-                    <div id = "container_menu">            
-                        
+                    <div id = "container_menu">         
+                        <h3>Contact Me</h3>   
+                        <div class="modalContact">
+                            <div class="contactIcon">
+                                <a class="modContactLink" href="mailto:nbs5000.dev@gmail.com">
+                                    <img class="contactImg" src="./assets/images/email.png" alt="Email Icon">
+                                    <p class="contactP">nbs5000.dev@gmail.com</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modalContact">
+                            <div class="contactIcon">
+                                <a class="modContactLink" href="https://github.com/NBS5000" target="_blank">
+                                    <img class="contactImg" src="./assets/images/github.png" alt="Github Icon">
+                                    <p class="contactP">nbs5000</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modalContact">
+                            <div class="contactIcon">
+                                <a class="modContactLink" href="https://www.linkedin.com/in/stephen-barry-676306108/" target="_blank">
+                                    <img class="contactImg" src="./assets/images/linkedin.png" alt="LinkedIn Icon">
+                                    <p class="contactP">https://www.linkedin.com/in/stephen-barry-676306108/</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modalContact">
+                            <div class="contactIcon">
+                                <a class="modContactLink" href="https://www.google.com/maps/place/Terrigal+NSW+2260/@-33.4457731,151.4113257,14z/data=!3m1!4b1!4m5!3m4!1s0x6b72b58677fc5889:0x5017d681632de80!8m2!3d-33.448011!4d151.444461" target="_blank">
+                                    <img class="contactImg" src="./assets/images/map.png" alt="Google Maps Icon">
+                                    <p class="contactP">Terrigal, NSW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modalContact">
+                            <div class="contactIcon">
+                                <a class="modContactLink" href="https://docs.google.com/document/d/1rUfsYP4VY3RjZRth_pvh2s8ZYj7r6FfjqfcYySy1COc/edit?usp=sharing" target="_blank">
+                                    <img class="contactImg" src="./assets/images/resume.png" alt="Resume Icon">
+                                    <p class="contactP">Steve Barry - Resume</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- ....................... -->
+            <!-- ............ -->
         </div>
     <footer>
         <div id="ball4"></div>

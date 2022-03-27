@@ -4,7 +4,11 @@ CSS file for variables
 */
 
 :root{
-    --h_color: rgb(0, 176, 240);
+    --h_color: rgb(0, 176, 240);   /*  00aff0  */
+    --firstColor: rgb(0, 176, 240);
+    --secondColor: grey;
+    /* --thirdColor:  #D88B3E;       */
+    --thirdColor: #F3B116;
     --bx_shadow: 5px 5px 15px grey;
     --tx_shadow: 1px 1px 3px dimgray;
 }

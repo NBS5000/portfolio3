@@ -12,3 +12,14 @@
 .scroll::-webkit-scrollbar-corner {
     background-color: rgba(0, 0, 0, 0);
 }
+
+
+#displayList{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    height: 210px;
+}

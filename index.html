@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steve Barry</title>
+    <title>Stephen Barry</title>
 
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/test.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/var.css"/>    
     <link rel="stylesheet" type="text/css" href="./assets/css/key.css"/>    
     <link rel="stylesheet" type="text/css" href="./assets/css/bg.css"/>    
+    <link rel="stylesheet" type="text/css" href="./assets/css/scroll.css"/>   
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 </head>
 <body>
@@ -22,7 +23,7 @@
         <div id="hdBody"></div>
 
         <h1>
-            Steve Barry
+            <span id="fName">Stephen</span><span id="lName">BARRY</span>
         </h1>
         <h2>
             Web Developer
@@ -44,11 +45,10 @@
         <div id="mainContent">
 
             <div id="about">
-                <h3>About Me</h3>
+                <h3>ABOUT ME</h3>
                 <p class="aboutP">Having spent over a decade working in the technical areas of insurance, such as fraud investigation, 
                     litigation, complaints, and other fun parts of it, an opportunity arose for me to switch to something 
                     I had long held a passion and interest for.....coding.</p>
-            
                 <p class="aboutP">Whilst living in Brasil, I studied web development through TAFE distance learning. Upon returning to Australia, 
                     I completed further courses, culminating in two TAFE diplomas, Software Development, and Web Development.</p>
                 <p class="aboutP">Once my courses were complete, I entered the development community, where I spent time volunteering with the 
@@ -56,7 +56,86 @@
                     with the FileMaker platform. Despite becoming an accomplished developer with this, I decided to leave and re-hone 
                     my skills with the University of Sydney Full Stack Bootcamp.</p>
             </div>
+            <div id="code">
+                <h3>MY CODE</h3>
+                <div id="displayList" class="scroll">
+                    <div class="itemBox">
+                        <div class="circle">
+                            <img class="itemImg" src="./assets/images/mosEspa.png" alt="">
+                        </div>
+                        <div class="itemText">
+                            <h4 class="itemH4">MosEspa</h4>
+                            <p class="itemP">An e-commerce site set in the Star Wars universe</p>
+                        </div>
+                    </div>
+                    <div class="itemBox">
+                        <div class="circle">
+                            <img class="itemImg" src="./assets/images/dateNight.png" alt="">
+                        </div>
+                        <div class="itemText">
+                            <h4 class="itemH4">Date Night</h4>
+                            <p class="itemP">A picture of Steve with Lorikeets</p>
+                        </div>
+                    </div>
+                    <div class="itemBox">
+                        <div class="circle">
+                            <img class="itemImg" src="./assets/images/password.png" alt="">
+                        </div>
+                        <div class="itemText">
+                            <h4 class="itemH4">Password Generator</h4>
+                            <p class="itemP">A picture of Steve with Lorikeets</p>
+                        </div>
+                    </div>
+                    <div class="itemBox">
+                        <div class="circle">
+                            <img class="itemImg" src="./assets/images/quiz.png" alt="">
+                        </div>
+                        <div class="itemText">
+                            <h4 class="itemH4">Quiz Time!</h4>
+                            <p class="itemP">A picture of Steve with Lorikeets</p>
+                        </div>
+                    </div>
+                    <div class="itemBox">
+                        <div class="circle">
+                            <img class="itemImg" src="./assets/images/theWeather.png" alt="">
+                        </div>
+                        <div class="itemText">
+                            <h4 class="itemH4">The Weather</h4>
+                            <p class="itemP">A picture of Steve with Lorikeets</p>
+                        </div>
+                    </div>
 
+                    <div class="itemBox">
+                        <div class="circle">
+                            <img class="itemImg" src="./assets/images/scheduler.png" alt="">
+                        </div>
+                        <div class="itemText">
+                            <h4 class="itemH4">Scheduler</h4>
+                            <p class="itemP">A picture of Steve with Lorikeets</p>
+                        </div>
+                    </div>
+
+                    <div class="itemBox">
+                        <div class="circle">
+                            <img class="itemImg" src="./assets/images/cricket.png" alt="">
+                        </div>
+                        <div class="itemText">
+                            <h4 class="itemH4">Cricket</h4>
+                            <p class="itemP">Fancy a game?</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
         </div>
     <footer>
         <div id="ball4"></div>
@@ -64,5 +143,13 @@
 
 
     </footer>
+
+    <script>
+        var item = document.getElementById("displayList");
+        window.addEventListener("wheel", function (e) {
+        if (e.deltaY > 0) item.scrollLeft += 80;
+        else item.scrollLeft -= 80;
+        });
+    </script>
 </body>
 </html>

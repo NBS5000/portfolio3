@@ -1,12 +1,18 @@
 @keyframes ball1 {
-    0%   {border: 2px solid var(--firstColor); top: -30vw;}
+    /* 0%   {border: 2px solid var(--firstColor); top: -30vw;}
     50%  {border: 2px solid var(--thirdColor); top: 8vw;}
-    100% {border: 2px solid var(--firstColor); top: -30vw;}
+    100% {border: 2px solid var(--firstColor); top: -30vw;} */
+    0%   {top: -30vw;}
+    50%  {top: 8vw;}
+    100% {top: -30vw;}
 }
 @keyframes ball2 {
-    0%   {border: 2px solid var(--thirdColor); bottom: -30vw;}
+    /* 0%   {border: 2px solid var(--thirdColor); bottom: -30vw;}
     50%  {border: 2px solid var(--firstColor); bottom: 8vw;}
-    100% {border: 2px solid var(--thirdColor); bottom: -30vw;}
+    100% {border: 2px solid var(--thirdColor); bottom: -30vw;} */
+    0%   {bottom: -30vw;}
+    50%  {bottom: 8vw;}
+    100% {bottom: -30vw;}
 }
 @keyframes ball3 {
     0%   {border: 2px solid var(--secondColor); top: -30vw;}
@@ -26,6 +32,23 @@
     
     55%  {color: var(--secondColor);}
     60%  {color:white;}
-    /* 95%  {color: white;} */
     100% {color:white;}
+}
+@keyframes lName {
+    0%   {text-shadow: 1px 1px var(--secondColor);}
+    25%  {text-shadow: 1px 1px var(--secondColor);}
+    35%  {text-shadow: 1px 1px var(--firstColor);}
+    
+    55%  {text-shadow: 1px 1px var(--firstColor);}
+    60%  {text-shadow: 1px 1px var(--secondColor);}
+    100% {text-shadow: 1px 1px var(--secondColor);}
+}
+
+
+@keyframes bwFont{
+    0%  {color:black;text-shadow: 0 0 1px white;}
+    40% {color:black;text-shadow: 0 0 1px white;}
+    50% {color:white;text-shadow: 0 0 1px black;}
+    90% {color:white;text-shadow: 0 0 1px black;}
+    100%{color:black;text-shadow: 0 0 1px white;}
 }

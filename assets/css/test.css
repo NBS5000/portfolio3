@@ -44,7 +44,7 @@ h2{
     font-size: 100%;
     margin-top: 65px;
 }
-#about{
+#about, #code{
     margin-top: 2vw;
     width: 50%;
     border-right: 10px solid #F3B116;
@@ -59,7 +59,7 @@ h2{
 }
 .aboutP{
     margin: 0 auto;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
     display: block;
     width: 70%;
     color: black;
@@ -68,7 +68,7 @@ h2{
     
 }
 h3{
-    margin: 2vw auto;
+    margin: 1vw auto;
     /* color: var(--thirdColor); */
     color: white;
     font-size: 150%;
@@ -77,6 +77,15 @@ h3{
     display: block;
     width: 70%;
     
+}
+#fName{
+    text-shadow: 1px 1px var(--thirdColor);
+}
+#lName{
+    /* text-shadow: 1px 1px var(--secondColor); */
+    animation-name: lName;
+    animation-duration: 40s;
+    animation-iteration-count: 999;
 }
 
 #contact{

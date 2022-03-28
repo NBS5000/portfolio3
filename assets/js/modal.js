@@ -48,7 +48,11 @@ modalBtn_proj.forEach(btn => {
 //get repo info for display
 function getInfo(repoName){
     let repo_Name;
-    var url = requestUrl + repoName;
+    if(repoName == "mosEspa"){
+        var url = "https://api.github.com/repos/cn-kp/Ecommerce-fullstack";
+    }else{
+        var url = requestUrl + repoName;
+    }
     fetch(url)
     .then(
         res => res.json(),
@@ -62,12 +66,18 @@ function getInfo(repoName){
             setTimeout(function(){},1000);
         }
         if(!page){
-            page = gitLink + repoName;
+            if(repoName == "mosEspa"){
+                page = gitLink + repoName;
+                visit.value = repoName;
+                git.value = repoName;
+            }else{
+                page = "https://mosespamarketplace.herokuapp.com/";
+                visit.value = page;
+                git.value = "https://github.com/cn-kp/Ecommerce-fullstack";
+            }
         }
         linkAbout.innerHTML = about;
         linkFrame.src = page;
-        visit.value = repoName;
-        git.value = repoName;
 
         repoTitle = repoName;
 
@@ -85,13 +95,22 @@ function getInfo(repoName){
 // go to page
 function visitPage(){
     var goto = visit.value;
-    var link = gitLink + goto + "/index.html";
+    if(goto == "https://mosespamarketplace.herokuapp.com/"){
+        var link = goto;
+    }else{
+        var link = gitLink + goto + "/index.html";
+    }
     window.open(link, '_blank').focus();
 }
 // go to repo
 function visitGit(){
-    var goto = visit.value;
-    var link = repoLink + goto;
+    var goto = git.value;
+    if(goto == "https://github.com/cn-kp/Ecommerce-fullstack"){
+        var link = goto;
+    }else{repoLink
+        var link = gitLink + goto;
+    }
+    // var link = repoLink + goto;
     window.open(link, '_blank').focus();
 }
 

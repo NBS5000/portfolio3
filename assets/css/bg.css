@@ -48,7 +48,7 @@
     border: 2px solid var(--thirdColor);
     animation-name: ball2;
     overflow:hidden;
-    bottom: -37vh;
+    bottom: -39.5vh;
 }
 #ball4{
     background-color: var(--thirdColor);

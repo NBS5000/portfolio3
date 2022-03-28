@@ -5,10 +5,55 @@ Media CSS file
 */
 
 
-@media screen and (max-width:1060px) and (min-width:550px) {
+@media screen and (max-width:1060px) and (min-width:900px) {
     h3{
         margin-top: 25px;
         margin-bottom: 10px;
+    }
+    #ball2{
+        animation-name: ball2_1060;
+    }
+    #about, #code{
+        margin-top: 4vw;
+        width: 50%;
+        border-right: 10px solid #F3B116;
+        border-left: 10px solid #F3B116;
+        padding-bottom: 27px;
+        justify-content: center;
+        background: #01b0f07d;
+        border-radius: 180px;
+        width: 78vw;
+        align-items: center;
+        padding-left:20px;
+    }
+}
+@media screen and (max-width:900px) and (min-width:550px) {
+    h3{
+        margin: 0;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+    .aboutP{
+        margin-bottom: 3vw;
+        width: 70%;
+        font-size: 110%;
+        text-align: justify;
+    }
+    #about, #code{
+        margin-top: 4vw;
+        width: 50%;
+        border-right: 10px solid #F3B116;
+        border-left: 10px solid #F3B116;
+        padding-bottom: 27px;
+        justify-content: center;
+        background: #01b0f07d;
+        border-radius: 100px;
+        width: 78vw;
+        align-items: center;
+        padding-left:20px;
     }
 }
 @media screen and (max-width:550px) {
@@ -17,6 +62,9 @@ Media CSS file
     }
     footer{
         background-color: white; 
+    }
+    #mainContent{
+        margin-bottom:50px;
     }
     #copy{
         width: 100%;
@@ -34,7 +82,7 @@ Media CSS file
         margin-bottom: 3vw;
         width: 85%;
         font-size: 110%;
-        text-align: center;
+        text-align: justify;
     }
     
     h3{

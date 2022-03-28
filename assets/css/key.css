@@ -4,9 +4,9 @@
     100% {top: -30vh;}
 }
 @keyframes ball2 {
-    0%   {bottom: -40vh;}
-    50%  {bottom: -6vh;}
-    100% {bottom: -40vh;}
+    0%   {bottom: -39vh;}
+    50%  {bottom: -1vh;}
+    100% {bottom: -39vh;}
 }
 @keyframes ball3 {
     0%   {border: 2px solid var(--secondColor); top: -30vh;}
@@ -56,8 +56,14 @@
     60%  {color:white;}
     100% {color:white;}
 }
-
+/***********    Media keyframes ****/
 @keyframes copy550{
     0%   {color: var(--thirdColor);}
     100% {color: var(--thirdColor);}
+}
+
+@keyframes ball2_1060 {
+    0%   {bottom: -39vh;}
+    50%  {bottom: -1.1vh;}
+    100% {bottom: -39vh;}
 }

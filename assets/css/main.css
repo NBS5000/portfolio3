@@ -80,7 +80,6 @@ h3{
     text-shadow: 1px 1px var(--thirdColor);
 }
 #lName{
-    /* text-shadow: 1px 1px var(--secondColor); */
     animation-name: lName;
     animation-duration: 40s;
     animation-iteration-count: 999;

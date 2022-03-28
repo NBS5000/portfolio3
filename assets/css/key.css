@@ -4,9 +4,9 @@
     100% {top: -30vw;}
 }
 @keyframes ball2 {
-    0%   {bottom: -30vw;}
-    50%  {bottom: 8vw;}
-    100% {bottom: -30vw;}
+    0%   {bottom: -37vw;}
+    50%  {bottom: 1vw;}
+    100% {bottom: -37vw;}
 }
 @keyframes ball3 {
     0%   {border: 2px solid var(--secondColor); top: -30vw;}

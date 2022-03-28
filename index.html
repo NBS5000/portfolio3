@@ -185,14 +185,18 @@
                             </div>
                         </div>
                         <div class="modalContact">
-                            <div class="contactIcon">
-                                <a class="modContactLink" href="https://docs.google.com/document/d/1rUfsYP4VY3RjZRth_pvh2s8ZYj7r6FfjqfcYySy1COc/edit?usp=sharing" target="_blank">
+                            <div id="optionsCV" class="contactIcon">
+                                <a id="viewCV" class="modContactLink" href="https://docs.google.com/document/d/1rUfsYP4VY3RjZRth_pvh2s8ZYj7r6FfjqfcYySy1COc/edit?usp=sharing" target="_blank">
                                     <img class="contactImg" src="./assets/images/resume.png" alt="Resume Icon">
-                                    <p class="contactP">Steve Barry - Resume</p>
+                                    <p id="viewCvP" class="contactP">Steve Barry - Resume</p>
+                                </a>
+                                <a id="downCV" class="modContactLink" href="./assets/doc/SteveBarry_CV.pdf" download>
+                                    <img id="downCvImg" class="contactImg" src="./assets/images/download.png" alt="Download Icon">
                                 </a>
                             </div>
                         </div>
                     </div>
+                    <button id="canx" class="modBtn canx" target="_blank">Cancel</button>
                 </div>
             </div>
             <!-- ............ -->
@@ -201,15 +205,17 @@
                 <!-- The Modal -->
     <div id="myModal_proj" class="modal">
         <!-- Modal content -->
-        <div class="modal-content">
+        <div class="modal-content_proj">
             <h5 id="modalTitle"></h5>
             <p id="modalAbout"></p>
             <div id="frameDiv">
                 <iframe id="modalView" src="" frameborder="0"></iframe>
             </div>
-            <button id="visit" class="conCan" onclick="visitPage()" value="">Visit</button>
-            <button id="git" class="conCan" onclick="visitGit()" value="">Github</button>
-            <button id="canx" class="conCan" target="_blank">Cancel</button>
+            <div id="projBtnSet">
+                <button id="visit" class="modBtn" onclick="visitPage()" value="">Visit</button>
+                <button id="git" class="modBtn" onclick="visitGit()" value="">Github</button>
+                <button id="canx" class="modBtn canx" target="_blank">Cancel</button>
+            </div>
         </div>
     </div>
     <!----------------->
@@ -217,7 +223,7 @@
     <footer>
         <div id="ball4"></div>
         <div id="ftBody"></div>
-        <h5>&copy; Steve Barry 2022</h4>
+        <h5 id="copy">&copy; Steve Barry 2022</h4>
 
     </footer>
 

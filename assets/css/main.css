@@ -128,7 +128,7 @@ footer{
     bottom: 0;
     z-index: 12;
 }
-h5{
+#copy{
     font-size: 90%;
     font-weight: 100;
     float: right;
@@ -143,8 +143,8 @@ h5{
 
 .projViewBtn{
     border: none; 
-    /* background-color:rgba(0, 0, 0, 0);  */
-    background-color: black;
+    background-color:rgba(0, 0, 0, 0); 
+    /* background-color: black; */
     margin-left: -100%;
     position: absolute;
     height: 100%;

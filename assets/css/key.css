@@ -1,15 +1,9 @@
 @keyframes ball1 {
-    /* 0%   {border: 2px solid var(--firstColor); top: -30vw;}
-    50%  {border: 2px solid var(--thirdColor); top: 8vw;}
-    100% {border: 2px solid var(--firstColor); top: -30vw;} */
     0%   {top: -30vw;}
     50%  {top: 8vw;}
     100% {top: -30vw;}
 }
 @keyframes ball2 {
-    /* 0%   {border: 2px solid var(--thirdColor); bottom: -30vw;}
-    50%  {border: 2px solid var(--firstColor); bottom: 8vw;}
-    100% {border: 2px solid var(--thirdColor); bottom: -30vw;} */
     0%   {bottom: -30vw;}
     50%  {bottom: 8vw;}
     100% {bottom: -30vw;}

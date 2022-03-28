@@ -37,9 +37,12 @@ const modalBtn_proj = document.querySelectorAll('.projViewBtn');
 modalBtn_proj.forEach(btn => {
     btn.addEventListener('click', async (event) => {
         const proj = event.target.getAttribute("data-value");
-        var link = gitLink + proj;
+        if(proj == "mosEspa"){
+            var link = "https://mosespamarketplace.herokuapp.com/";
+        }else{
+            var link = gitLink + proj;
+        }
         linkFrame.src = link;
-        // linkTitle.innerHTML = "Date Night!";
         getInfo(proj);
     });
 });
@@ -47,7 +50,6 @@ modalBtn_proj.forEach(btn => {
 
 //get repo info for display
 function getInfo(repoName){
-    let repo_Name;
     if(repoName == "mosEspa"){
         var url = "https://api.github.com/repos/cn-kp/Ecommerce-fullstack";
     }else{
@@ -66,14 +68,14 @@ function getInfo(repoName){
             setTimeout(function(){},1000);
         }
         if(!page){
-            if(repoName == "mosEspa"){
-                page = gitLink + repoName;
-                visit.value = repoName;
-                git.value = repoName;
-            }else{
+            if(repoName == "Ecommerce-fullstack"){
                 page = "https://mosespamarketplace.herokuapp.com/";
                 visit.value = page;
                 git.value = "https://github.com/cn-kp/Ecommerce-fullstack";
+            }else{
+                page = gitLink + repoName;
+                visit.value = repoName;
+                git.value = repoName;
             }
         }
         linkAbout.innerHTML = about;
@@ -110,7 +112,6 @@ function visitGit(){
     }else{repoLink
         var link = gitLink + goto;
     }
-    // var link = repoLink + goto;
     window.open(link, '_blank').focus();
 }
 

@@ -1,23 +1,23 @@
 @keyframes ball1 {
-    0%   {top: -30vw;}
-    50%  {top: 8vw;}
-    100% {top: -30vw;}
+    0%   {top: -30vh;}
+    50%  {top: 8vh;}
+    100% {top: -30vh;}
 }
 @keyframes ball2 {
-    0%   {bottom: -37vw;}
-    50%  {bottom: 1vw;}
-    100% {bottom: -37vw;}
+    0%   {bottom: -40vh;}
+    50%  {bottom: -6vh;}
+    100% {bottom: -40vh;}
 }
 @keyframes ball3 {
-    0%   {border: 2px solid var(--secondColor); top: -30vw;}
-    50%  {border: 2px solid var(--thirdColor); top: 8vw;}
-    100% {border: 2px solid var(--secondColor); top: -30vw;}
+    0%   {border: 2px solid var(--secondColor); top: -30vh;}
+    50%  {border: 2px solid var(--thirdColor); top: 8vh;}
+    100% {border: 2px solid var(--secondColor); top: -30vh;}
 }
 
 @keyframes ball4 {
-    0%   {border: 2px solid var(--thirdColor); bottom: -30vw;}
-    50%  {border: 2px solid var(--firstColor); bottom: 8vw;}
-    100% {border: 2px solid var(--thirdColor); bottom: -30vw;}
+    0%   {border: 2px solid var(--thirdColor); bottom: -30vh;}
+    50%  {border: 2px solid var(--firstColor); bottom: 8vh;}
+    100% {border: 2px solid var(--thirdColor); bottom: -30vh;}
 }
 @keyframes nameH1 {
     0%   {color: white;}

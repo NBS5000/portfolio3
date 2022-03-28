@@ -5,8 +5,11 @@ Media CSS file
 */
 
 
-@media screen and (max-width:850px) and (min-width:450px) {
-    
+@media screen and (max-width:1060px) and (min-width:550px) {
+    h3{
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
 }
 @media screen and (max-width:550px) {
     body{
@@ -15,7 +18,7 @@ Media CSS file
     footer{
         background-color: white; 
     }
-    h5{
+    #copy{
         width: 100%;
         text-align: center;
         font-weight: bold;

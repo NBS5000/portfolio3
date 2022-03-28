@@ -17,11 +17,13 @@ header{
 }
 #mainContent{
     width: 80%;
-    
+    height: 80vh;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 h1,h2{

@@ -25,20 +25,20 @@
     overflow:hidden;
 }
 #ball1, #ball3{
-    height: 70vw;
-    width: 70vw;
+    height: 70vh;
+    width: 70vh;
     border-radius: 50%;
-    top: -30vw;
-    left: -30vw;
+    top: -30vh;
+    left: -30vh;
     animation-duration: 40s;
     animation-iteration-count: 999;
 }
 #ball2, #ball4{
-    height: 50vw;
-    width: 50vw;
+    height: 50vh;
+    width: 50vh;
     border-radius: 50%;
-    bottom: -30vw;
-    right: -30vw;
+    bottom: -30vh;
+    right: -30vh;
     z-index: -5;
     position: absolute;
     animation-duration: 60s;
@@ -48,7 +48,7 @@
     border: 2px solid var(--thirdColor);
     animation-name: ball2;
     overflow:hidden;
-    bottom: -37vw;
+    bottom: -37vh;
 }
 #ball4{
     background-color: var(--thirdColor);

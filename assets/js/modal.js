@@ -39,7 +39,7 @@ modalBtn_proj.forEach(btn => {
         const proj = event.target.getAttribute("data-value");
         var link = gitLink + proj;
         linkFrame.src = link;
-        linkTitle.innerHTML = "Date Night!";
+        // linkTitle.innerHTML = "Date Night!";
         getInfo(proj);
     });
 });
@@ -47,12 +47,15 @@ modalBtn_proj.forEach(btn => {
 
 //get repo info for display
 function getInfo(repoName){
+    let repo_Name;
     var url = requestUrl + repoName;
     fetch(url)
     .then(
         res => res.json(),
     )
     .then(function(res){
+        repoName = res.name;
+        let repoTitle, repoTitle2, repoTitle3,repoTitle4,regX1,regX2;
         var about = res.description;
         var page = res.homepage;
         if(!about || !page){
@@ -65,6 +68,14 @@ function getInfo(repoName){
         linkFrame.src = page;
         visit.value = repoName;
         git.value = repoName;
+
+        repoTitle = repoName;
+
+        repoTitle = repoName.replace(/([A-Z])/g, ' $1').trim();
+        repoTitle2 = repoTitle.charAt(0).toUpperCase() + repoTitle.slice(1);
+        
+        linkTitle.innerHTML = repoTitle2;
+        
         modalProj.style.display = "block";
     })
     .catch(function (error) {

@@ -57,29 +57,34 @@ function getInfo(repoName){
     }else{
         var url = requestUrl + repoName;
     }
+    console.log(url);
     fetch(url)
     .then(
         res => res.json(),
     )
     .then(function(res){
         repoName = res.name;
-        let repoTitle, repoTitle2, repoTitle3,repoTitle4,regX1,regX2;
+        let repoTitle, repoTitle2;
         var about = res.description;
         var page = res.homepage;
         if(!about || !page){
             setTimeout(function(){},1000);
         }
         if(!page){
-            if(repoName == "Ecommerce-fullstack"){
-                page = "https://mosespamarketplace.herokuapp.com/";
-                visit.value = page;
-                git.value = "https://github.com/cn-kp/Ecommerce-fullstack";
-            }else{
                 page = gitLink + repoName;
-                visit.value = repoName;
-                git.value = repoName;
-            }
         }
+        if(repoName == "Ecommerce-fullstack"){
+            page = "https://mosespamarketplace.herokuapp.com/";
+            visit.value = page;
+            git.value = "https://github.com/cn-kp/Ecommerce-fullstack";
+
+        }else{
+            visit.value = repoName;
+            git.value = repoName;
+        }
+        console.log(visit.value);
+        console.log(git.value);
+        console.log(repoName);
         linkAbout.innerHTML = about;
         linkFrame.src = page;
 
@@ -97,24 +102,24 @@ function getInfo(repoName){
     });
 }
 // go to page
-function visitPage(){
-    var goto = visit.value;
-    if(goto == "https://mosespamarketplace.herokuapp.com/"){
-        var link = goto;
+function visitPage(x){
+    if(x == "https://mosespamarketplace.herokuapp.com/"){
+        var link = x;
     }else{
-        var link = gitLink + goto + "/index.html";
+        var link = gitLink + x + "/index.html";
     }
-    window.open(link, '_blank').focus();
+    console.log(link);
+    window.open(link, '_blank');
 }
 // go to repo
-function visitGit(){
-    var goto = git.value;
-    if(goto == "https://github.com/cn-kp/Ecommerce-fullstack"){
-        var link = goto;
-    }else{repoLink
-        var link = gitLink + goto;
+function visitGit(x){
+    if(x == "https://github.com/cn-kp/Ecommerce-fullstack"){
+        var link = x;
+    }else{
+        var link = repoLink + x;
     }
-    window.open(link, '_blank').focus();
+    console.log(link);
+    window.open(link, '_blank');
 }
 
 // Closing the modal

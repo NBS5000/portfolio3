@@ -39,6 +39,8 @@ modalBtn_proj.forEach(btn => {
         const proj = event.target.getAttribute("data-value");
         if(proj == "mosEspa"){
             var link = "https://mosespamarketplace.herokuapp.com/";
+        }else if(proj == "cricket"){
+            return;
         }else{
             var link = gitLink + proj;
         }
